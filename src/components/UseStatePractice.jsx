@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ImageOne from "../assets/images/png/image-one.png"
 
 const UseStatePractice = () => {
     const [value, setValue] = useState(0)
+    useEffect(() => {
+        console.log("values", value)
+    }, [])
 
     return (
         <div className='my-10'>
