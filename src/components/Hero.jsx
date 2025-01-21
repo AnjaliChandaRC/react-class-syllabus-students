@@ -5,9 +5,11 @@ import Description from './common/Description'
 const Hero = () => {
   return (
     <>
+      <h2 className='text-3xl font-bold pt-10 pb-5'>Print Data With Map</h2>
       <div className='sm:flex justify-between'>
         {CARDS_LIST.map((obj, index) => (
-          <div key={index} className={`${index === 1 ? "pt-20" : ""}`}>
+          <div key={index} className={`${index === 1 ? "pt-10" : ""}`}>
+            <h2 className='text-xl font-bold'>{index + 1}</h2>
             <h2>{obj.heading}</h2>
             <p>{obj.description}</p>
             <span>{obj.icon}</span>
@@ -19,6 +21,7 @@ const Hero = () => {
           </div>
         ))}
       </div>
+      <h2 className='text-3xl font-bold pt-10 pb-5'>Props</h2>
       <Description text="lorem text" style="text-red-400" />
     </>
   )

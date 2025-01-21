@@ -13,10 +13,12 @@ const Footer = () => {
   };
   return (
     <div>
+      <h2 className='text-3xl font-bold py-10'>Change bg color with UseLocation</h2>
       <div className={`${path === "/" ? "bg-black" : "bg-green-600"} w-[350px] h-[300px]`}>
       </div>
 
-      <Slider {...settings} className='overflow-hidden'>
+      <h2 className='text-3xl font-bold text-center py-10'>Slider</h2>
+      <Slider {...settings} className='overflow-hidden pb-10'>
         <div>
           <h3>1</h3>
         </div>

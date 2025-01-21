@@ -10,23 +10,6 @@ const HomeOne = () => {
       <Hero />
       <Footer />
     </div>
-      // useEffect(() => {
-      //   const handleOverflow = () => {
-      //     if (nav && window.innerWidth < 768) {
-      //       document.body.classList.add("overflow-hidden");
-      //     } else {
-      //       document.body.classList.remove("overflow-hidden");
-      //     }
-      //   };
-    
-      //   handleOverflow();
-      //   window.addEventListener("resize", handleOverflow);
-    
-      //   return () => {
-      //     document.body.classList.remove("overflow-hidden");
-      //     window.removeEventListener("resize", handleOverflow);
-      //   };
-      // }, [nav]);
   )
 }
 

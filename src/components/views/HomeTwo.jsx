@@ -8,7 +8,8 @@ const HomeTwo = () => {
   return (
     <>
       <PracticeEmail />
-      <UseStatePractice/>
+      <UseStatePractice />
+      <h2 className='text-3xl font-bold pt-10 pb-5'>Props</h2>
       <Description text="Lorem Two" style="text-green-500" />
       <Footer />
     </>

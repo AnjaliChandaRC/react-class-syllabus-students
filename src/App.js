@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ImageUpload from './components/ImageUpload';
 import TextReverseSplit from './components/TextReverseSplit';
-import CounterPractice from './components/CounterPractice';
 import CustomAccordion from './components/CustomAccordion';
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
           <Route path='/about' element={<HomeTwo />} />
           <Route path='/image' element={<ImageUpload />} />
           <Route path='/split' element={<TextReverseSplit />} />
-          <Route path='/counter' element={<CounterPractice />} />
           <Route path='/faq' element={<CustomAccordion />} />
         </Routes>
       </BrowserRouter>

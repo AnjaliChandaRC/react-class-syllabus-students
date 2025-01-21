@@ -3,7 +3,7 @@ import { HEADER_LIST } from '../../utils/Helper'
 
 const Header = () => {
 
-  const [nav, setNav] = useState()
+  const [nav, setNav] = useState(false)
 
   useEffect(() => {
     const handlerClick = () => {
@@ -15,7 +15,7 @@ const Header = () => {
       }
     }
     handlerClick()
-  },[])
+  })
 
   return (
     <>
