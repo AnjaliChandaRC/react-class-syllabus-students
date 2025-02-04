@@ -17,7 +17,7 @@ function App() {
           <Route path='/about' element={<HomeTwo />} />
           <Route path='/image' element={<ImageUpload />} />
           <Route path='/split' element={<TextReverseSplit />} />
-          <Route path='/faq' element={<CustomAccordion />} />
+          <Route path='/faq/:title' element={<CustomAccordion />} />
         </Routes>
       </BrowserRouter>
     </>
