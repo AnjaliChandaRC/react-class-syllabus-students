@@ -8,6 +8,7 @@ const CustomAccordion = () => {
         setValue(value === index ? "" : index)
     }
 
+    // Using useParams with params
     const { title } = useParams()
 
     return (

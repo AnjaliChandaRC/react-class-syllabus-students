@@ -60,18 +60,18 @@ export const ACCORDION_LIST = [
 export const HEADER_LIST = [
     {
         title: "Home",
-        link:"#",
+        // link:"#",
     },
     {
         title: "About",
-        link:"#about",
+        // link:"#about",
     },
     {
         title: "Roadmap",
-        link:"#roadmap",
+        // link:"#roadmap",
     },
     {
         title: "Contact",
-        link:"#contact",
+        // link:"#contact",
     },
 ]
