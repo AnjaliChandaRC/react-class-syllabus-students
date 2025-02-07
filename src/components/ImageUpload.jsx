@@ -1,31 +1,26 @@
-import React, { useState } from 'react'
+import { useState } from "react"
 
 const ImageUpload = () => {
-    const [uploadImage, setUploadImage] = useState(null);
-    const changeHandler = (event) => {
-        const file = event.target.files[0];
-        if (file) {
-            const image = URL.createObjectURL(file);
-            setUploadImage(image);
+
+    const [image, setImage] = useState()
+
+    const changeImageHandler = (event) => {
+        const fileImage = event.target.files[0]
+        if (fileImage) {
+            const img = URL.createObjectURL(fileImage)
+            setImage(img)
         }
-    };
+    }
 
     return (
         <>
-            <input
-                accept="image/*"
-                type="file"
-                id="my-file"
-                onChange={changeHandler}
-                hidden
-            />
-            <label htmlFor="my-file">Upload</label>
-            {uploadImage && (
-                <img
-                    src={uploadImage}
-                    alt="Uploaded"
-                />
-            )}
+            <div>
+                <input type="file" id="img" hidden onChange={changeImageHandler} />
+                <label htmlFor="img">Upload Image</label>
+                {image &&
+                    <img src={image} alt="upload img" />
+                }
+            </div>
         </>
     )
 }
