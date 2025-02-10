@@ -9,6 +9,7 @@ import TextReverseSplit from './components/TextReverseSplit';
 import CustomAccordion from './components/CustomAccordion';
 import UseSearchParamsPractice from './components/UseSearchParamsPractice';
 import ParamsWithIndex from './components/ParamsWithIndex';
+import Validation from './components/Validation';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/faq/:title' element={<CustomAccordion />} />
           <Route path='/params' element={<UseSearchParamsPractice />} />
           <Route path='/index' element={<ParamsWithIndex />} />
+          <Route path='/form' element={<Validation />} />
         </Routes>
       </BrowserRouter>
     </>
