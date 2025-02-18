@@ -75,3 +75,22 @@ export const HEADER_LIST = [
         // link:"#contact",
     },
 ]
+
+export const SIDEBAR_DATA = [
+    {
+        text: "Dashboard",
+        url: "/"
+    },
+    {
+        text: "Events",
+        url: "/events"
+    },
+    {
+        text: "Order",
+        url: "/order"
+    },
+    {
+        text: "Progress",
+        url: "/progress"
+    },
+]

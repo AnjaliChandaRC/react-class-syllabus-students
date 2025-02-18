@@ -22,7 +22,7 @@ const Hero = () => {
         ))}
       </div>
       <h2 className='text-3xl font-bold pt-10 pb-5'>Props</h2>
-      <Description text="lorem text" style="text-red-400" />
+      <Description title={"lorem text"} titleTwo={"Title Two"} titleThree={"Title Three"} customClass="text-gray-500" />
     </>
   )
 }
