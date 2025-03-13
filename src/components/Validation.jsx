@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom";
 import swal from 'sweetalert';
 
 const Validation = () => {
@@ -9,7 +10,7 @@ const Validation = () => {
         password: "",
         confirmPassword: ""
     }
-
+    const router = useNavigate()
     const [value, setValue] = useState(formData)
     const [error, setError] = useState(false)
     const [password, setPassword] = useState(false)
@@ -26,16 +27,25 @@ const Validation = () => {
             value.confirmPassword !== "" &&
             regex.test(value.email)
         ) {
+            localStorage.setItem("value", JSON.stringify(value))
+            localStorage.setItem("isLogin", "true")
             setError(false)
             setValue(formData)
-            console.log("value", value)
             swal({
                 title: "Form Submitted Successfully",
                 icon: "warning",
                 dangerMode: true,
             })
+            router("/about")
+            console.log("value", value)
         }
     }
+
+    useEffect(() => {
+        if (localStorage.getItem("isLogin") === "true") {
+            router("/about")
+        }
+    }, [])
 
     return (
         <form action="" className='flex justify-center items-center min-h-screen flex-col'>

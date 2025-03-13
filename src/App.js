@@ -10,7 +10,6 @@ import CustomAccordion from './components/CustomAccordion';
 import UseSearchParamsPractice from './components/UseSearchParamsPractice';
 import ParamsWithIndex from './components/ParamsWithIndex';
 import Validation from './components/Validation';
-import FormValidation from './components/FormValidation';
 import GsapPractice from './components/GsapPractice';
 import Sidebar from './components/Sidebar';
 
@@ -28,7 +27,6 @@ function App() {
           <Route path='/params' element={<UseSearchParamsPractice />} />
           <Route path='/index' element={<ParamsWithIndex />} />
           <Route path='/form' element={<Validation />} />
-          <Route path='/form2' element={<FormValidation />} />
           <Route path='/gsap' element={<GsapPractice />} />
           <Route path='/sidebar' element={<Sidebar />} />
         </Routes>
